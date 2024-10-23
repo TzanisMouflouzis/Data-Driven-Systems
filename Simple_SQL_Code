@@ -1,1 +1,23 @@
+DROP TABLE IF EXISTS movies;
 
+CREATE TABLE movies
+(
+  id INTEGER PRIMARY KEY,
+  title TEXT,
+  director TEXT,
+  year INTEGER,
+  length_minutes INTEGER
+  );
+  
+  ALTER TABLE Movies
+  ADD Aspect_ratio FLOAT;
+  
+  ALTER TABLE Movies
+  ADD Language VARCHAR(20)
+  DEFAULT"English";
+  
+  INSERT INTO Movies
+  VALUES
+  (1, "Toy Story", "Jhon Lasseter", 1995, 81, 0.8, "English"),
+  (2, "A Bug's Life", "Jhon Lasseter", 1997, 81, 0.8, "English"),
+  (3, "Toy Story 2", "Jhon Lasseter", 2000, 86, 0.8, "English")
